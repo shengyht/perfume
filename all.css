@@ -147,17 +147,19 @@ body {
   }
 }
 
-.banner {
+.banner{
   width: 100%;
-  height: 870px;
+}
+.banner-pic{
   background-image: url("https://images.unsplash.com/photo-1588159343745-445ae0b16383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -110px 100px;
   position: relative;
   margin-bottom: 60px;
+  width: 100%;
+  height: 870px;
 }
-
 .slogan {
   width: 445px;
   color: #FFFFFF;
@@ -206,7 +208,8 @@ body {
   .banner {
     width: 375px;
     height: 480px;
-    background-image: url("https://images.unsplash.com/photo-1588159343745-445ae0b16383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80");
+  }
+    /* background-image: url("https://images.unsplash.com/photo-1588159343745-445ae0b16383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -70px 90px;
@@ -233,15 +236,15 @@ body {
     font-weight: 400;
     color: #ffffff;
     padding-bottom: 16px;
-  }
+  } */
   .shop-btn {
     width: 345px;
   }
 }
 
-.intro {
+/* .intro {
   width: 1110px;
-}
+} */
 
 .box {
   display: -webkit-box;
@@ -346,12 +349,11 @@ body {
 
 .train-li {
   width: 550px;
-  height: 1080px;
 }
 
 .train-pic {
   width: 555px;
-  height: 100%;
+  height: 680px;
   display: block;
   background-image: url("https://images.unsplash.com/photo-1542038382126-77ae2819338d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjR8MTE1ODAyMTR8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
   background-repeat: no-repeat;
@@ -387,6 +389,7 @@ body {
   padding: 18px 51px;
   width: 350px;
   display: block;
+  margin-bottom: 40px;
 }
 
 .training-btn:hover {
@@ -397,17 +400,28 @@ body {
 }
 
 @media (max-width: 375px) {
-  .box {
+  .dn{
     display: none;
   }
   .box-mobile {
     display: block;
   }
+  .box-item{
+    height: auto;
+    width: 345px;
+  }
+  .item-name{
+    margin-top: 40px;
+  }
   .Gabrielle, .fiveoclock, .N5 {
     width: 345px;
     height: 350px;
+    display: block;
   }
-  .train {
+  .more{
+    padding-bottom: 32px;
+  }
+  .train{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -415,10 +429,16 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 345px;
+    padding-bottom: 0;
+  }
+  .train-li{
+    width:345px;
   }
   .train-pic {
     width: 345px;
+  }
+  .train-mt{
+    margin-top: 8px;
   }
 }
 
@@ -468,6 +488,7 @@ body {
   background-image: url("https://images.unsplash.com/photo-1559264730-1533a6ec0433?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mjh8MTE1ODAyMTR8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
   background-size: cover;
   overflow: hidden;
+  opacity:0.3;
 }
 
 .ACVC:hover {
@@ -531,6 +552,9 @@ body {
 }
 
 @media (max-width: 375px) {
+  .item{
+    padding-bottom: 36px;
+  }
   .item-d-flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -539,6 +563,29 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .item-pic{
+    width: 344px;
+    height: 350px;
+  }
+  .item-price{
+    margin-bottom: 0;
+  }
+  .PB {
+      background-position: 0 -150px;
+  }
+  .BW {
+      background-position: 0 -90px;
+    }
+  .ACVC {
+      background-position: 0 -50px;
+  }
+  .sold-out{
+    position: absolute;
+    top:5370px;
+    left:100px;
+    width: 160px;
+    text-align: center;
   }
 }
 
@@ -554,7 +601,7 @@ body {
 
 .recycle-li {
   width: 730px;
-  height: 520px;
+  height: auto;
 }
 
 .recycle-pic {
@@ -596,6 +643,9 @@ body {
 }
 
 @media (max-width: 375px) {
+  .recycling{
+    padding-bottom: 40px;
+  }
   .recycle {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -610,6 +660,10 @@ body {
   }
   .recycle-li {
     width: 345px;
+  }
+  .recycle-mt{
+    margin-top: 40px;
+    margin-left: 0;
   }
 }
 
