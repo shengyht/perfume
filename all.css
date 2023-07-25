@@ -68,6 +68,7 @@ a {
 
 body {
   font-family: "SF Pro Text";
+  line-height: 1.5;
   max-width:100%;
   max-height: 100%;
 }
@@ -144,7 +145,6 @@ body {
 
 .title {
   font-size: 40px;
-  line-height: 60px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 700;
 }
@@ -153,7 +153,6 @@ body {
   font-size: 24px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 100;
-  line-height: 36px;
   padding-bottom: 16px;
   margin-bottom: 16px;
 }
@@ -164,7 +163,6 @@ body {
   border-radius: 30px;
   width: 350px;
   font-size: 28px;
-  line-height: 42px;
   text-align: center;
   padding: 13px 109px;
   font-family: 'SF Pro Text', sans-serif;
@@ -203,7 +201,6 @@ body {
 
 .item-name {
   font-size: 32px;
-  line-height: 48px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 700;
   margin-top: 150px;
@@ -211,7 +208,6 @@ body {
 
 .item-content {
   font-size: 20px;
-  line-height: 30px;
   font-family: 'PingFang TC';
   font-weight: 100;
   padding-bottom: 16px;
@@ -220,7 +216,6 @@ body {
 .more {
   display: block;
   font-size: 16px;
-  line-height: 24px;
   color: #AC8A46;
   font-family: 'PingFang TC';
   font-weight: 500;
@@ -299,14 +294,12 @@ body {
 
 .train-title {
   font-size: 24px;
-  line-height: 36px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 400;
 }
 
 .train-content {
   font-size: 16px;
-  line-height: 24px;
   font-family: 'SF Pro Text', sans-serif;
   padding-bottom: 52px;
 }
@@ -316,7 +309,6 @@ body {
   border: 2px solid #000000;
   border-radius: 30px;
   font-size: 20px;
-  line-height: 30px;
   text-align: center;
   padding: 18px 51px;
   width: 350px;
@@ -386,14 +378,12 @@ body {
 
 .item-title {
   font-size: 24px;
-  line-height: 36px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 400;
 }
 
 .item-brand {
   font-size: 16px;
-  line-height: 24px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 100;
   padding-bottom: 16px;
@@ -407,7 +397,6 @@ body {
 
 .item-price {
   font-size: 16px;
-  line-height: 24px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 100;
   margin-bottom: 40px;
@@ -416,7 +405,6 @@ body {
 
 .price-del {
   font-size: 16px;
-  line-height: 24px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 100;
   text-decoration: line-through;
@@ -430,7 +418,6 @@ body {
 
 .sold-out {
   font-size: 24px;
-  line-height: 36px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 400;
   color: #ffffff;
@@ -466,14 +453,12 @@ body {
 
 .recycle-title {
   font-size: 32px;
-  line-height: 48px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: bold;
 }
 
 .recycle-sub-title {
   font-size: 20px;
-  line-height: 30px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 100;
   padding-bottom: 16px;
@@ -481,7 +466,6 @@ body {
 
 .recycle-content {
   font-size: 16px;
-  line-height: 24px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 100;
   padding-bottom: 16px;
@@ -507,7 +491,6 @@ body {
 
 .brand {
   font-size: 20px;
-  line-height: 30px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: normal;
   text-decoration: none;
@@ -530,15 +513,22 @@ body {
   width: 255px;
   border: 1px solid white;
 }
-
-.product-pic {
+.product-pic{
   width: 255px;
   height: 255px;
+  overflow: hidden;
 }
-
+.pic {
+  width: 255px;
+  height: 255px;
+  object-fit: cover;
+  
+}
+.product-pic:hover {
+  transform: scale(1.2);
+}
 .product-name {
   font-size: 24px;
-  line-height: 36px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 500;
   color: #000000;
@@ -546,7 +536,6 @@ body {
 
 .brand-name {
   font-size: 16px;
-  line-height: 24px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 300;
   color: #000000;
@@ -556,7 +545,6 @@ body {
 
 .price-del {
   font-size: 16px;
-  line-height: 24px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 100;
   text-decoration: line-through;
@@ -576,145 +564,9 @@ body {
   color: #916019;
   margin-right: 11px;
 }
-
-.product1 {
-  background-image: url("https://images.unsplash.com/photo-1519669011783-4eaa95fa1b7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=379&q=80");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
+.icon:hover{
+  color:  #e1a751;
 }
-
-.product1:hover {
-  background-size: 130%;
-}
-
-.product2 {
-  background-image: url("https://images.unsplash.com/photo-1530630458144-014709e10016?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80");
-  background-size: cover;
-  background-position: 0 -120px;
-  overflow: hidden;
-}
-
-.product2:hover {
-  background-size: 130%;
-  background-position: -40px -210px;
-}
-
-.product3 {
-  background-image: url("https://images.unsplash.com/photo-1566977776052-6e61e35bf9be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80");
-  background-size: cover;
-  background-position: 0 -40px;
-  overflow: hidden;
-}
-
-.product3:hover {
-  background-size: 130%;
-  background-position: -50px -90px;
-}
-
-.product4 {
-  background-image: url("https://images.unsplash.com/photo-1578996834254-13d1b661a5ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80");
-  background-size: cover;
-  background-position: 0 -20px;
-  overflow: hidden;
-}
-
-.product4:hover {
-  background-size: 130%;
-  background-position: -30px -50px;
-}
-
-.product5 {
-  background-image: url("https://images.unsplash.com/photo-1582211594533-268f4f1edcb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80");
-  background-size: cover;
-  background-position: 0 -50px;
-  overflow: hidden;
-}
-
-.product5:hover {
-  background-size: 130%;
-  background-position: -40px -80px;
-}
-
-.product6 {
-  background-image: url("https://images.unsplash.com/photo-1585120040315-2241b774ad0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
-  background-size: 170%;
-  background-position: 0 -30px;
-  overflow: hidden;
-}
-
-.product6:hover {
-  background-size: 220%;
-  background-position: -30px -80px;
-}
-
-.product7 {
-  background-image: url("https://images.unsplash.com/photo-1592842414746-a2fd2101381f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.product7:hover {
-  background-size: 130%;
-}
-
-.product8 {
-  background-image: url("https://images.unsplash.com/photo-1544468266-6a8948003cd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=874&q=80");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.product8:hover {
-  background-size: 180%;
-}
-
-.product9 {
-  background-image: url("https://images.unsplash.com/photo-1551500519-b59aed76227b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.product9:hover {
-  background-size: 130%;
-  background-position: -30px -150px;
-}
-
-.product10 {
-  background-image: url("https://images.unsplash.com/photo-1592247691114-69a06342531a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.product10:hover {
-  background-size: 130%;
-}
-
-.product11 {
-  background-image: url("https://images.unsplash.com/photo-1559264729-91549dddfc45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.product11:hover {
-  background-size: 130%;
-}
-
-.product12 {
-  background-image: url("https://images.unsplash.com/photo-1594913366159-1832cfbe7ca1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.product12:hover {
-  background-size: 180%;
-}
-
 .page-d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -729,13 +581,14 @@ body {
   text-decoration: none;
   color: #000000;
   font-size: 20px;
-  line-height: 30px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 300;
   margin-right: 20px;
   padding: 3px 3px;
 }
-
+.default:hover{
+  color: #AC8A46;
+}
 .brown {
   color: #AC8A46;
   text-decoration: underline;
@@ -751,15 +604,15 @@ body {
 
 .info-p {
   font-size: 32px;
-  line-height: 48px;
   font-family: 'PingFang TC';
   font-weight: 500;
   color: #8D8D8D;
 }
 
 .mt-300 {
-  padding-top: 300px;
-  margin-left: 405px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .email-text {
@@ -780,7 +633,6 @@ body {
   background-color: #ffff;
   padding-left: 16px;
   font-size: 16px;
-  line-height: 24px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: medium;
 }
@@ -789,7 +641,6 @@ body {
   width: 131px;
   height: 60px;
   padding-top: 17px;
-  line-height: 24px;
   font-size: 16px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: medium;
@@ -799,7 +650,10 @@ body {
   border: 2px solid #916000;
   border-radius: 0px 4px 4px 0px;
 }
-
+.subscribe:hover{
+  background-color: #412c0b;
+  border:2px solid #412c0b;
+}
 .footer {
   background-color: #916000;
   padding-top: 32px;
@@ -828,7 +682,6 @@ body {
 .comp-info {
   color: #ffff;
   font-size: 14px;
-  line-height: 21px;
   margin-top: 10px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 400;
@@ -846,13 +699,21 @@ body {
 .filter-item {
   color: #ffff;
   font-size: 20px;
-  line-height: 30px;
   margin-left: 36px;
   font-family: 'SF Pro Text', sans-serif;
   font-weight: 300;
 }
-
+.filter-item:hover{
+  background-color: #ffff;
+  color:#916019;
+  border:2px solid #ffff;
+  
+}
 @media (max-width: 375px) {
+  body{
+    max-width:375px;
+    margin:0 auto;
+  }
   .container {
     margin: 0 auto;
     max-width: 345px;
@@ -870,7 +731,7 @@ body {
     margin-top: 10px;
   }
 .banner {
-    width: 375px;
+    max-width: 100%;
     height: 480px;
   }
 .shop-btn {
