@@ -741,7 +741,7 @@ body {
   
   .shop-btn {
     padding: 13px 106.5px;
-    /* max-width:345px; */
+    width:100%;
   }
 .dn{
     display: none;
